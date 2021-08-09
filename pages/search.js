@@ -15,15 +15,15 @@ function Search({ searchResults }) {
     <div>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
 
-      <main className="flex ">
+      <main className="flex dark:bg-dark-primary">
         <section className="flex-grow pt-14 px-6">
-          <p className="text-xs">
+          <p className="text-xs dark:text-dark-text">
             300+ Stays - {range} - for {noOfGuests} guests
           </p>
-          <h1 className="text-3xl font-semibold mt-2 mb-6">
+          <h1 className="text-3xl font-semibold mt-2 mb-6 dark:text-dark-text">
             Stays in {location}
           </h1>
-          <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
+          <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap dark:text-dark-text">
             <p className="button">Cancellation Flexibility</p>
             <p className="button">Type of Place</p>
             <p className="button">Price</p>

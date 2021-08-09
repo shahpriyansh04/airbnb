@@ -16,14 +16,16 @@ function InfoCard({ img, location, title, description, star, price, total }) {
         />
       </div>
       <div className="flex flex-col flex-grow pl-5">
-        <div className="flex justify-between">
+        <div className="flex justify-between dark:text-dark-text">
           <p>{location}</p>
           <HeartIcon className="h-7 cursor-pointer" />
         </div>
-        <h4 className="text-xl">{title}</h4>
+        <h4 className="text-xl dark:text-dark-text">{title}</h4>
         <div className="border-b w-10 pt-2" />
-        <p className="pt-2 text-sm text-gray-500 flex-grow">{description}</p>
-        <div className="flex justify-between items-end pt-5">
+        <p className="pt-2 text-sm text-gray-500 flex-grow dark:text-dark-text">
+          {description}
+        </p>
+        <div className="flex justify-between  items-end pt-5 dark:text-dark-text">
           <p className="flex items-center">
             <StarIcon className="h-5 text-red-400" />
             {star}
