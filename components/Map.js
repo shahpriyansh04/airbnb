@@ -39,12 +39,12 @@ function Map({ searchResults }) {
               onClick={() => setSelectedLocation(result)}
               className="cursor-pointer text-2xl animate-bounce "
             >
-              📌
+              📍
             </p>
           </Marker>
           {selectedLocation.long === result.long ? (
             <Popup
-              onClick={() => setSelectedLocation({})}
+              onClose={() => setSelectedLocation({})}
               closeOnClick={true}
               latitude={result.lat}
               longitude={result.long}
