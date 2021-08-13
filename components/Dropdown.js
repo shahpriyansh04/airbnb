@@ -2,7 +2,7 @@ import React from "react";
 function Dropdown() {
   return (
     <div
-      className="flex flex-col  h-screen text-md sm:hidden  shadow-md dark:shadow-md bg-white dark:bg-dark-primary dark:text-dark-text  items-center  text-center"
+      className="flex flex-col  h-screen text-md md:hidden  shadow-md dark:shadow-md bg-white dark:bg-dark-primary dark:text-dark-text  items-center  text-center"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="user-menu-button"
