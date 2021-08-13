@@ -5,6 +5,7 @@ import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
 import Footer from "../components/Footer";
+import SearchBar from "../components/SearchBar";
 export default function Home({ exploreData, cardsData }) {
   return (
     <div>
@@ -15,6 +16,9 @@ export default function Home({ exploreData, cardsData }) {
       </Head>
       <Header />
       <Banner />
+      {/* <div className="shadow-lg px-8 mx-auto pt-4 bg-white dark:bg-dark-primary dark:text-dark-text  ">
+        <SearchBar show={true} />
+      </div> */}
       <div className="bg-white dark:bg-dark-primary">
         <main className="max-w-7xl mx-auto px-8 sm:px-16  ">
           <section className="pt-6">
