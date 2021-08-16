@@ -20,8 +20,8 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange, DateRangePicker } from "react-date-range";
 import Dropdown from "./Dropdown";
 import SearchBar from "./SearchBar";
+import DarkModeButton from "./DarkModeButton";
 function Header({ placeholder }) {
-  const { theme, changeTheme } = useTheme();
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -102,7 +102,7 @@ function Header({ placeholder }) {
               className="h-6 md:hidden cursor-pointer outline-none"
             />
             <UserCircleIcon className="hidden md:inline h-6 cursor-pointer" />
-            {theme === "light" ? (
+            {/* {theme === "light" ? (
               <MoonIcon
                 onClick={() => {
                   changeTheme();
@@ -116,7 +116,8 @@ function Header({ placeholder }) {
                 }}
                 className="h-6 cursor-pointer hover:scale-110 transition duration-500 ease-in-out rounded-full"
               ></SunIcon>
-            )}
+            )} */}
+            <DarkModeButton />
           </div>
         </div>
       </header>
