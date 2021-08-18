@@ -83,6 +83,7 @@ function Header({ placeholder }) {
             src="https://links.papareact.com/qd3"
             layout="fill"
             objectFit="contain"
+            placeholder="blur"
             objectPosition="left"
           />
         </div>

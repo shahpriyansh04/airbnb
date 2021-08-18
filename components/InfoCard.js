@@ -11,6 +11,8 @@ function InfoCard({ img, location, title, description, star, price, total }) {
         <Image
           src={img}
           layout="fill"
+          placeholder="blur"
+
           objectFit="cover"
           className="rounded-none md:rounded-2xl"
         />
